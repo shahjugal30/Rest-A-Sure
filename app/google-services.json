@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1037345505797",
+    "firebase_url": "https://rest-a-sure.firebaseio.com",
+    "project_id": "rest-a-sure",
+    "storage_bucket": "rest-a-sure.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037345505797:android:c557d08fad427c367b926c",
+        "android_client_info": {
+          "package_name": "com.jugal.rest_a_sure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037345505797-tccflc026hq1gj3l0i4etur3qd9qqd8e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jugal.rest_a_sure",
+            "certificate_hash": "b651018ba6af6f394b3ab706bf010fa262214a44"
+          }
+        },
+        {
+          "client_id": "1037345505797-sovbmqj3p76db1apo4vdpj0epbdbunqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8NWEZvVwqY2g-FpnTUi7U5Lt_UiaApaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037345505797-sovbmqj3p76db1apo4vdpj0epbdbunqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
