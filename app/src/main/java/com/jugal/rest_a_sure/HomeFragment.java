@@ -17,6 +17,8 @@ import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.gms.common.wrappers.PackageManagerWrapper;
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -32,22 +34,27 @@ import com.google.android.gms.tasks.Task;
 
 import static com.firebase.ui.auth.AuthUI.getApplicationContext;
 
-public class HomeFragment extends Fragment{
-
+public class HomeFragment extends Fragment implements OnMapReadyCallback{
+    SupportMapFragment mapFragment;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        Button mapbutton= (Button) view.findViewById(R.id.mapbutton);
-        mapbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent in = new Intent(getActivity(),MapActivity.class);
-                startActivity(in);
-            }
-        });
+        mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
+        if (mapFragment == null)
+        {
+            FragmentManager fm = getFragmentManager();
+            FragmentTransaction ft = fm.beginTransaction();
+            mapFragment = SupportMapFragment.newInstance();
+            ft.replace(R.id.map, mapFragment).commit();
+        }
+        mapFragment.getMapAsync(this);
         return view;
     }
 
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+
+    }
 }
