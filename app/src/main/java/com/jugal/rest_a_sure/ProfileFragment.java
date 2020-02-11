@@ -1,5 +1,6 @@
 package com.jugal.rest_a_sure;
 
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -25,10 +26,13 @@ public class ProfileFragment extends Fragment {
     ImageView profile;
     FirebaseUser user;
     FirebaseAuth fauth;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.fragment_profile,container,false);
+
+
 
 
         chgpass = view.findViewById(R.id.textView5);
