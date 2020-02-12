@@ -81,6 +81,8 @@ public class HomeFragment extends Fragment implements
     public void onMapReady(GoogleMap googleMap) {
 
     mMap = googleMap;
+
+
         if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)
         {
 
