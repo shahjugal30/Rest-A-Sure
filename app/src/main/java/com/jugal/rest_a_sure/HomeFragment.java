@@ -87,6 +87,74 @@ public class HomeFragment extends Fragment implements
         LatLng mehman = new LatLng(19.111687,72.909188);
         mMap.addMarker(new MarkerOptions().position(mehman).title("Mehman Nawazi"));
 
+        LatLng ftabove = new LatLng(19.228485,72.852599);
+        mMap.addMarker(new MarkerOptions().position(ftabove).title("90FT ABOVE"));
+
+        LatLng aroundglobe = new LatLng(19.223664,72.841122);
+        mMap.addMarker(new MarkerOptions().position(aroundglobe).title("AROUND D’GLOBE"));
+
+        LatLng kailash = new LatLng(19.202992,72.859805);
+        mMap.addMarker(new MarkerOptions().position(kailash).title("KAILASH PARBAT"));
+
+        LatLng mastee = new LatLng(19.223667,72.841146);
+        mMap.addMarker(new MarkerOptions().position(mastee).title("MASTEE"));
+
+        LatLng theobroma = new LatLng(19.220825,72.851322);
+        mMap.addMarker(new MarkerOptions().position(theobroma).title("THEOBROMA"));
+
+        LatLng hydro = new LatLng(19.221023,72.862200);
+        mMap.addMarker(new MarkerOptions().position(hydro).title("CAFÉ HYDRO"));
+
+        LatLng brainfreeze = new LatLng(19.103534,72.852171);
+        mMap.addMarker(new MarkerOptions().position(brainfreeze).title("BRAIN FREEZE ICE CREAM & DESERTS"));
+
+        LatLng bombay_kulfi = new LatLng(19.236916,72.853708);
+        mMap.addMarker(new MarkerOptions().position(bombay_kulfi).title("Bombay Kulfi"));
+
+        LatLng messy_house = new LatLng(19.211703,72.841306);
+        mMap.addMarker(new MarkerOptions().position(messy_house).title("The Messy House - Dessert Bar & Cafe"));
+
+        LatLng chocolate_heaven = new LatLng(19.104267,72.836623);
+        mMap.addMarker(new MarkerOptions().position(chocolate_heaven).title("The Chocolate Heaven"));
+
+        LatLng huber_holly = new LatLng(19.099002,72.827315);
+        mMap.addMarker(new MarkerOptions().position(huber_holly).title("Huber & Holly – Juhu Tara Road, Mumbai"));
+
+        LatLng banana_leaf = new LatLng(19.125101,72.822510);
+        mMap.addMarker(new MarkerOptions().position(banana_leaf).title("Banana Leaf Restaurant"));
+
+        LatLng barbeque_nation = new LatLng(19.136227,72.833212);
+        mMap.addMarker(new MarkerOptions().position(barbeque_nation).title("Barbeque Nation - Mumbai - Lokhandwala"));
+
+        LatLng shreeji = new LatLng(19.234338,72.855702);
+        mMap.addMarker(new MarkerOptions().position(shreeji).title("Shreeji's The Fusion Kitchen"));
+
+        LatLng girgaon = new LatLng(19.230737,72.852265);
+        mMap.addMarker(new MarkerOptions().position(girgaon).title("Girgaon Katta"));
+
+        LatLng bbc = new LatLng(19.229925,72.847892);
+        mMap.addMarker(new MarkerOptions().position(bbc).title("Biryani Barbeque Chinese"));
+
+        LatLng pangat = new LatLng(19.231093,72.836901);
+        mMap.addMarker(new MarkerOptions().position(pangat).title("Pangat"));
+
+        LatLng bhagat = new LatLng(19.224351,72.851541);
+        mMap.addMarker(new MarkerOptions().position(bhagat).title("K Bhagat Tarachand"));
+
+        LatLng fusion = new LatLng(19.254638,72.849076);
+        mMap.addMarker(new MarkerOptions().position(fusion).title("The Fusion Kitchen"));
+
+        LatLng burgerking = new LatLng(19.141613,72.830938);
+        mMap.addMarker(new MarkerOptions().position(burgerking).title("Burger King"));
+
+        LatLng mcdonalds = new LatLng(19.119613,72.846057);
+        mMap.addMarker(new MarkerOptions().position(mcdonalds).title("McDonald's"));
+
+        LatLng maharajabhog = new LatLng(19.096409,72.828140);
+        mMap.addMarker(new MarkerOptions().position(maharajabhog).title("Maharaja Bhog"));
+
+
+
         if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)
         {
 
