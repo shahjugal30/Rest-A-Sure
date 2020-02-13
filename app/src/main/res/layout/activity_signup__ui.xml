@@ -7,58 +7,58 @@
     android:background="#ececda"
     tools:context=".signup_ui">
 
-    <com.google.android.gms.common.SignInButton
+    <Button
         android:id="@+id/google_button"
-        android:layout_width="225dp"
-        android:layout_height="55dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center_horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="@dimen/fui_auth_method_button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/fui_ic_googleg_color_24dp"
+        android:drawablePadding="@dimen/fui_auth_method_button_drawablePadding"
+        android:text="@string/fui_sign_in_with_google"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.813" />
+        app:layout_constraintTop_toBottomOf="@+id/email_b" />
 
     <Button
         android:id="@+id/email_b"
-        android:textSize="16sp"
-        android:layout_width="225dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/fui_auth_method_button_width"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="76dp"
+        android:layout_marginTop="32dp"
         android:background="#ff3858"
-        android:drawableLeft="@drawable/ic_action_email_id"
-        android:drawablePadding="2dp"
+        android:drawableLeft="@drawable/fui_ic_mail_white_24dp"
+        android:drawablePadding="@dimen/fui_auth_method_button_drawablePadding"
+        android:drawableTint="@android:color/white"
         android:text="@string/fui_sign_in_with_email"
-        android:textAllCaps="false"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
         android:textColor="#ffffff"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/phone_b"
-        android:textSize="16sp"
         android:layout_width="225dp"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:background="#ff3858"
         android:drawableLeft="@drawable/ic_action_phone"
-        android:drawablePadding="2dp"
+        android:drawablePadding="@dimen/fui_auth_method_button_drawablePadding"
         android:text="@string/fui_sign_in_with_phone"
-        android:textAllCaps="false"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
         android:textColor="#ffffff"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.931" />
+        app:layout_constraintTop_toBottomOf="@+id/google_button" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -66,10 +66,10 @@
         android:layout_height="430dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="292dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
 
