@@ -81,7 +81,11 @@ public class HomeFragment extends Fragment implements
     public void onMapReady(GoogleMap googleMap) {
 
     mMap = googleMap;
+        LatLng grandmama = new LatLng(19.091418,72.827888);
+        mMap.addMarker(new MarkerOptions().position(grandmama).title("Grandmama's All Day Cafe"));
 
+        LatLng mehman = new LatLng(19.111687,72.909188);
+        mMap.addMarker(new MarkerOptions().position(mehman).title("Mehman Nawazi"));
 
         if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)
         {
