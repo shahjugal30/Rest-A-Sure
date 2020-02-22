@@ -55,7 +55,8 @@ public class HomeFragment extends Fragment implements
     private LocationRequest locationRequest;
     private Location lastLocation;
     private Marker currentUserLocationMarker;
-    private static final int Request_User_Location_Code = 99;
+    private static final int Request_User_Location_Code = 101;
+
 
     @Nullable
     @Override
@@ -79,6 +80,8 @@ public class HomeFragment extends Fragment implements
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
+
+
 
     mMap = googleMap;
         LatLng grandmama = new LatLng(19.091418,72.827888);
