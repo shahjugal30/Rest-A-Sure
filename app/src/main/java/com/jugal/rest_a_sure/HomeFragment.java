@@ -81,8 +81,6 @@ public class HomeFragment extends Fragment implements
     @Override
     public void onMapReady(GoogleMap googleMap) {
 
-
-
     mMap = googleMap;
         LatLng grandmama = new LatLng(19.091418,72.827888);
         mMap.addMarker(new MarkerOptions().position(grandmama).title("Grandmama's All Day Cafe"));
@@ -237,7 +235,7 @@ public class HomeFragment extends Fragment implements
         LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
-        mMap.animateCamera(CameraUpdateFactory.zoomBy(12));
+        mMap.animateCamera(CameraUpdateFactory.zoomTo(11));
         if (googleApiClient != null)
         {
             LocationServices.FusedLocationApi.removeLocationUpdates(googleApiClient, this);
@@ -251,9 +249,9 @@ public class HomeFragment extends Fragment implements
     public void onConnected(@Nullable Bundle bundle) {
 
         locationRequest =  new LocationRequest();
-        locationRequest.setInterval(10);
-        locationRequest.setFastestInterval(10);
-        locationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY);
+        locationRequest.setInterval(1);
+        locationRequest.setFastestInterval(1);
+        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 
         if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)
         {
