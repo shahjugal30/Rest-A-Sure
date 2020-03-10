@@ -1,9 +1,12 @@
 package com.jugal.rest_a_sure;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.GridView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,42 +19,32 @@ import java.util.List;
 
 public class CuisineFragment extends Fragment {
     @Nullable
+    String[] dishes_name = {"Arabian","Bakery","Barbeque","Biryani","Burgers","Cafe","Chaat","Chinese","Dessert","Indian","Italian","Lebanese","Maharashtrain","Mexican","Mughlai","Multicuisine","North Indian","Rajasthani","Sandwich","Seafood","South Indian","Street Food","Thai"};
+    int[] dishes_img = {R.drawable.arabian,R.drawable.bakery,R.drawable.bbq,R.drawable.biryani,R.drawable.burgers,R.drawable.cafe,R.drawable.chaat,R.drawable.chinese,R.drawable.desserts,R.drawable.indian,R.drawable.italian,R.drawable.lebanese,R.drawable.maharashtrain,R.drawable.mexican,R.drawable.mughlai,R.drawable.multicuisine,R.drawable.north_indian,R.drawable.rajasthani,R.drawable.sandwich,R.drawable.seafood,R.drawable.south_indian,R.drawable.street_food,R.drawable.thai};
 
-    List<Dishes> lstDish;
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_cuisine,container,false);
-        lstDish = new ArrayList<>();
-        lstDish.add(new Dishes("Arabian",R.drawable.arabian));
-        lstDish.add(new Dishes("Bakery",R.drawable.bakery));
-        lstDish.add(new Dishes("Barbeque",R.drawable.bbq));
-        lstDish.add(new Dishes("Biryani",R.drawable.biryani));
-        lstDish.add(new Dishes("Burger",R.drawable.burgers));
-        lstDish.add(new Dishes("Cafe",R.drawable.cafe));
-        lstDish.add(new Dishes("Chaat",R.drawable.chaat));
-        lstDish.add(new Dishes("Chinese",R.drawable.chinese));
-        lstDish.add(new Dishes("Dessert",R.drawable.desserts));
-        lstDish.add(new Dishes("Indian",R.drawable.indian));
-        lstDish.add(new Dishes("Italian",R.drawable.italian));
-        lstDish.add(new Dishes("Lebanese",R.drawable.lebanese));
-        lstDish.add(new Dishes("Maharastrain",R.drawable.maharashtrain));
-        lstDish.add(new Dishes("Mexican",R.drawable.mexican));
-        lstDish.add(new Dishes("Mughlai",R.drawable.mughlai));
-        lstDish.add(new Dishes("Multicuisine",R.drawable.multicuisine));
-        lstDish.add(new Dishes("North Indian",R.drawable.north_indian));
-        lstDish.add(new Dishes("Rajasthani",R.drawable.rajasthani));
-        lstDish.add(new Dishes("Sandwich",R.drawable.sandwich));
-        lstDish.add(new Dishes("Seafood",R.drawable.seafood));
-        lstDish.add(new Dishes("South Indian",R.drawable.south_indian));
-        lstDish.add(new Dishes("Street Food",R.drawable.street_food));
-        lstDish.add(new Dishes("Thai",R.drawable.thai));
 
-        RecyclerView myrv = (RecyclerView) view.findViewById(R.id.recycler);
-        RecyclerViewAdapter myAdapter = new RecyclerViewAdapter(getActivity(),lstDish);
-        myrv.setLayoutManager (new GridLayoutManager(getActivity() ,2));
-        myrv.setAdapter(myAdapter);
+        GridView gridView = (GridView) view.findViewById(R.id.grid_view);
+        MainAdapter adapter = new MainAdapter(CuisineFragment.this,dishes_name,dishes_img);
+        gridView.setAdapter(adapter);
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+
+
+
+            }
+        });
+
+
+
 
 
         return view;
+
+
     }
 }

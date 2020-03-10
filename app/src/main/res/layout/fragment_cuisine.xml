@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CuisineFragment"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="8dp">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler"
+    <GridView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        />
+        android:id="@+id/grid_view"
+        android:numColumns="2"/>
 
 
 
 
 
 
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
