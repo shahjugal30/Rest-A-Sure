@@ -59,4 +59,7 @@ public class MainAdapter extends BaseAdapter {
         textView.setText(dishes_name[position]);
         return convertView;
     }
+
+
+
 }
