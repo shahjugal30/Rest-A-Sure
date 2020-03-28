@@ -23,7 +23,7 @@ public class CuisineFragment extends Fragment {
     String[] dishes_name = {"Arabian","Bakery","Barbeque","Biryani","Burgers","Cafe","Chaat","Chinese","Dessert","Indian","Italian","Lebanese","Maharashtrain","Mexican","Mughlai","Multicuisine","North Indian","Rajasthani","Sandwich","Seafood","South Indian","Street Food","Thai"};
     int[] dishes_img = {R.drawable.arabian,R.drawable.bakery,R.drawable.bbq,R.drawable.biryani,R.drawable.burgers,R.drawable.cafe,R.drawable.chaat,R.drawable.chinese,R.drawable.desserts,R.drawable.indian,R.drawable.italian,R.drawable.lebanese,R.drawable.maharashtrain,R.drawable.mexican,R.drawable.mughlai,R.drawable.multicuisine,R.drawable.north_indian,R.drawable.rajasthani,R.drawable.sandwich,R.drawable.seafood,R.drawable.south_indian,R.drawable.street_food,R.drawable.thai};
 
-    
+
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_cuisine,container,false);
