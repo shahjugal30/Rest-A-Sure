@@ -1,6 +1,7 @@
 package com.jugal.rest_a_sure;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,7 +35,8 @@ public class CuisineFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
 
-
+                Intent i = new Intent(getActivity(),restaurant_list.class);
+                startActivity(i);
 
             }
         });
