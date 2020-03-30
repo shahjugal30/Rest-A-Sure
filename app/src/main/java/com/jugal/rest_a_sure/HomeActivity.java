@@ -68,18 +68,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             case R.id.cuisine:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new CuisineFragment()).commit();
                 break;
-            case R.id.bookings:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new BookingsFragment()).commit();
-                break;
+
             case R.id.preview_booking:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new PreviewBookingFragment()).commit();
                 break;
-            case R.id.cancel_booking:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new CancelBookingFragment()).commit();
-                break;
-            case R.id.reviews:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ReviewFragment()).commit();
-                break;
+
             case R.id.logout:
                 logOut();
                 return true;
