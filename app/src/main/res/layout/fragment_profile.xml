@@ -132,9 +132,10 @@
                     android:fontFamily="@font/belgrano"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="To reset password, Click on Forgot Password below:"
+                    android:text="To reset password,
+                     Click on Forgot Password below:"
                     android:textColor="#3797CF"
-                    android:textSize="24sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textView5"
@@ -147,7 +148,7 @@
 
                     android:text="Forgot Password ?"
                     android:textColor="#000000"
-                    android:textSize="22sp" />
+                    android:textSize="20sp" />
 
                 <View
                     android:layout_width="match_parent"

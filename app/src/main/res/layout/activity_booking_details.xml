@@ -66,7 +66,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/belgrano"
 
-                    android:textSize="22sp"/>
+                    android:textSize="18sp"/>
 
 
 
@@ -93,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/belgrano"
 
-                    android:textSize="22sp"/>
+                    android:textSize="18sp"/>
 
 
 
@@ -124,14 +124,14 @@
         </LinearLayout>
 
         <Button
-            android:layout_marginTop="600dp"
-            android:layout_marginLeft="16dp"
-            android:layout_width="380dp"
+            android:layout_marginTop="570dp"
+            android:layout_marginLeft="96dp"
+            android:layout_width="220dp"
             android:layout_height="70dp"
             android:text="Confirm Booking"
             android:textColor="#FFFFFF"
             android:id="@+id/confirmation"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:background="@drawable/button"/>
 
         
