@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="70dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -133,9 +133,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="To reset password,
-                     Click on Forgot Password below:"
+
+                    Click on Forgot Password below:"
                     android:textColor="#3797CF"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textView5"

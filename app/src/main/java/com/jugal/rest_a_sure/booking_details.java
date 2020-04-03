@@ -125,7 +125,7 @@ public class booking_details extends AppCompatActivity implements DatePickerDial
             String id = databaseBooking.push().getKey();
             Booking booking = new Booking(id,name,datee,timee,guests);
             databaseBooking.child(id).setValue(booking);
-            Toast.makeText(this,"Booking confirmed",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Booking confirmed",Toast.LENGTH_SHORT).show();
 
         }
         else
