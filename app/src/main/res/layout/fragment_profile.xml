@@ -59,10 +59,10 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/belgrano"
+                    android:fontFamily="@font/adamina"
                     android:text="Name:"
                     android:textColor="#3797CF"
-                    android:textSize="24sp" />
+                    android:textSize="25sp" />
                 <TextView
                     android:id="@+id/uname"
                     android:layout_width="wrap_content"
@@ -70,8 +70,8 @@
                     android:textColor="#000000"
                     android:drawableLeft="@drawable/ic_person_black_24dp"
                     android:drawablePadding="5dp"
-                    android:textSize="22sp"
-                    android:fontFamily="@font/belgrano"/>
+                    android:textSize="24sp"
+                    android:fontFamily="@font/amarante"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -95,19 +95,19 @@
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/belgrano"
+                    android:fontFamily="@font/adamina"
                     android:text="Email Id:"
                     android:textColor="#3797CF"
-                    android:textSize="24sp"/>
+                    android:textSize="25sp"/>
                 <TextView
                     android:id="@+id/uname2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#000000"
-                    android:textSize="22sp"
+                    android:textSize="24sp"
                     android:drawableLeft="@drawable/fui_ic_mail_white_24dp"
                     android:drawablePadding="5dp"
-                    android:fontFamily="@font/belgrano"/>
+                    android:fontFamily="@font/amarante"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -129,14 +129,14 @@
 
                 <TextView
                     android:id="@+id/textView10"
-                    android:fontFamily="@font/belgrano"
+                    android:fontFamily="@font/adamina"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="To reset password,
 
                     Click on Forgot Password below:"
                     android:textColor="#3797CF"
-                    android:textSize="24sp" />
+                    android:textSize="25sp" />
 
                 <TextView
                     android:id="@+id/textView5"
@@ -145,11 +145,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_lock_black_24dp"
-                    android:fontFamily="@font/belgrano"
+                    android:fontFamily="@font/amarante"
 
                     android:text="Forgot Password ?"
                     android:textColor="#000000"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
                 <View
                     android:layout_width="match_parent"

@@ -62,6 +62,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/custom_button"
+        android:fontFamily="@font/amarante"
         android:text="Sign In"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"

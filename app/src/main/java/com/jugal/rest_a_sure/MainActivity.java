@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             Thread timer =new Thread() {
                 public void run () {
                     try {
-                        sleep(800);
+                        sleep(1855);
                     }
                     catch (InterruptedException e){
                         e.printStackTrace();

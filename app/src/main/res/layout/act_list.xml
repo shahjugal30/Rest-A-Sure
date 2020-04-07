@@ -24,14 +24,16 @@
                     android:layout_height="wrap_content"
                     android:text="Booking Name: "
                     android:textSize="24sp"
-                    android:textColor="#000000"/>
+                    android:fontFamily="@font/adamina"
+                    android:textColor="#3797CF"/>
 
         <TextView
             android:id="@+id/bookingname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textSize="24sp"
+            android:fontFamily="@font/amarante"
             android:textColor="#000000"/>
         </LinearLayout>
 
@@ -45,14 +47,16 @@
             android:layout_height="wrap_content"
             android:text="Booking Date: "
             android:textSize="24sp"
-            android:textColor="#000000"/>
+            android:fontFamily="@font/adamina"
+            android:textColor="#3797CF"/>
         <TextView
             android:id="@+id/bookingdate"
             android:layout_width="wrap_content"
+            android:fontFamily="@font/amarante"
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="20sp"/>
+            android:textSize="24sp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -64,15 +68,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Booking Time: "
+            android:fontFamily="@font/adamina"
             android:textSize="24sp"
-            android:textColor="#000000"/>
+            android:textColor="#3797CF"/>
         <TextView
             android:id="@+id/bookingtime"
             android:layout_width="wrap_content"
             android:textAlignment="center"
             android:layout_height="wrap_content"
             android:textColor="#000000"
-            android:textSize="20sp"/>
+            android:fontFamily="@font/amarante"
+            android:textSize="24sp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -85,14 +91,16 @@
             android:layout_height="wrap_content"
             android:text="Number of Guests: "
             android:textSize="24sp"
-            android:textColor="#000000"/>
+            android:fontFamily="@font/adamina"
+            android:textColor="#3797CF"/>
         <TextView
             android:id="@+id/guests_no"
             android:layout_width="wrap_content"
             android:textAlignment="center"
             android:layout_height="wrap_content"
             android:textColor="#000000"
-            android:textSize="20sp"/>
+            android:fontFamily="@font/amarante"
+            android:textSize="24sp"/>
     </LinearLayout>
 
     </LinearLayout>

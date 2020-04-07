@@ -82,6 +82,7 @@ public class HomeFragment extends Fragment implements
     public void onMapReady(GoogleMap googleMap) {
 
     mMap = googleMap;
+
         LatLng grandmama = new LatLng(19.091418,72.827888);
         mMap.addMarker(new MarkerOptions().position(grandmama).title("Grandmama's All Day Cafe"));
 
